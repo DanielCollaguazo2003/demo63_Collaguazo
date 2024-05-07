@@ -5,6 +5,7 @@ import java.util.List;
 import ec.edu.ups.ppw63.demo63.dao.ClienteDAO;
 import ec.edu.ups.ppw63.demo63.model.Cliente;
 import jakarta.ejb.Stateless;
+import jakarta.enterprise.inject.Default;
 import jakarta.inject.Inject;
 
 @Stateless

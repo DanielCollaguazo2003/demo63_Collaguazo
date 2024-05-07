@@ -41,7 +41,7 @@ public class FacturaDAO {
 		Query q = em.createQuery(jpql, Factura.class);
 		return q.getResultList();
 	}
-	
+
 	public List<CantidadFacturasClientes> getTotalFacturas() {
 		String sql = "SELECT f.codigo_cliente, c.nombre, COUNT(f.codigo) " +
                 "FROM factura f, cliente c " +
@@ -53,9 +53,9 @@ public class FacturaDAO {
 		List<CantidadFacturasClientes> results = q.getResultList();
 	    List<CantidadFacturasClientes> cantidadFacturasList = new ArrayList<CantidadFacturasClientes>();
 	    
-	    for (CantidadFacturasClientes result : results) {
-	        cantidadFacturasList.add(result);
-	    }
+//	    for (CantidadFacturasClientes result : results) {
+//	        cantidadFacturasList.add(result);
+//	    }
 
 	    return cantidadFacturasList;
 	}

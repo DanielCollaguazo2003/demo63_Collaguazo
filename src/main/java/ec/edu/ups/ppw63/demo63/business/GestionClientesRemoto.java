@@ -9,7 +9,7 @@ import jakarta.ejb.Remote;
 @Remote
 public interface GestionClientesRemoto {
 
-	public void guardarClientes(Cliente cliente) throws Exception;
+	public void guardarClientes(Cliente cliente)throws Exception;
 	public void actualizarCliente(Cliente cliente)throws Exception;
 	public Cliente getClientePorCedula(String cedula) throws Exception;
 	public Cliente getClientePorId(int codigo);
